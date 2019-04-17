@@ -1,0 +1,13 @@
+debug/main.o
+debug/interface.o
+debug/qsommet.o
+debug/qarc.o
+debug/arc.o
+debug/sommet.o
+debug/graphe.o
+debug/qgraphe.o
+debug/gestionnaire.o
+debug/onglet.o
+debug/algorithme.o
+debug/moc_interface.o
+debug/moc_qgraphe.o

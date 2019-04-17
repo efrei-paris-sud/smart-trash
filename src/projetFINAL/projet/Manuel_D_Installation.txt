@@ -1,0 +1,46 @@
+1 Installation et Ouverture de l’application
+	1.1 Pour Windows
+Pour compiler et exécuter le programme sur Windows,Il faudra être en possession de certains fichiers et suivre les
+instructions suivantes :
+	1. Récupérer le programme projet.zip
+	2. Télécharger Qt sur le site officiel en Open Source avec la dernière version 5.10.1 et cocher seulement la case
+	mingw53_32 (Compilateur windows)
+	3. Une fois Qt installé,rendez vous dans le dossier où vous l’avez stocké,puis dans le dossier du compilateur (en
+	général : C :/Qt/5.10.1/mingw53_32)
+	4. Extraire les fichiers du projet.zip dans C :/Qt/5.10.1/mingw53_32
+	5. Lancer le terminal mingw53_32 depuis Menu(Démarrer)/Tous les programmes/Qt/5.10.1/mingw5.3.0
+	32bits/QT 5.10.1 for Desktop
+	6. Via le Terminal,déplacez vous dans le dossier projet avec “cd projet”
+	7. Exécutez la commande suivante : qmake -config debug (configuration)
+	8. Exécutez la commande suivante : mingw32-make (compilation du programme)
+	9. Un dossier “debug” sera créer à la fin de la compilation, double-cliquez dessus pour accédez au projet.exe
+	10. Inclure les fichiers .dll suivants(qui se trouvent dans le dossier C :/Qt/5.10.1/mingw53_32/bin) dans le
+	dossier debug :
+		— libgcc_s_dw2-1.dll
+		— libstdc++-6.dll
+		— libwinpthread-1.dll
+		— Qt5Cored.dll
+		— Qt5Guid.dll
+		— Qt5Widgetsd.dll
+	11. Double-cliquez sur le projet.exe pour ouvrir le programme et commencer à travailler.
+Remarque : En principe,le programme devrait être exécutable à partir du dossier release,c’est à dire que le
+programme est considéré comme terminé dans ce dossier.Cependant,il est nécessaire de posséder d’autres fichiers .dll
+supplémentaires spécifique à Windows pour pouvoir lancer le programme.Nous avons donc choisis la méthode debug
+pour faciliter l’accès à l’application.
+	
+	1.2 Pour Linux
+Pour compiler et exécuter le programme sur Linux,Il faudra être en possession de certains paquets et suivre les
+instructions suivantes :
+	1. Dans l’idéal,avoir Qt installé sur sa machine en le téléchargeant sur le site officiel
+	2. Récupérez l’archive projet.zip et extraire dans le dossier de votre choix
+	3. Assurez vous de posséder qmake en exécutant cette commande dans le terminal : sudo apt-get install
+	qt4-qmake
+	4. Assurez vous de posséder la librairie de développement en exécutant cette commande dans le terminal : sudo
+	apt-get install libqt4-dev
+	5. Placez vous dans le dossier "projet" et ouvrez un Terminal
+	6. Exécutez la commande suivante : qmake
+	7. Exécutez la commande suivante : make (compilation du programme)
+	8. Un fichier exécutable projet est créé à la fin de la compilation,exécuter la commande ./projet dans le terminal
+	afin d’exécuter le programme et commencer à travailler.
+Remarque :Selon la version de Qt que vous possédez,télécharger les paquets correspondants,dans notre cas la
+version de Linux était Qt4.
